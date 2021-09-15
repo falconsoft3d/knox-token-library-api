@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+      container_name : knoxtokenapi
+      restart: always
+      build: .
+      ports: 
+            - "3000:3000"
+      volumes:
+            - .:/usr/src/app
