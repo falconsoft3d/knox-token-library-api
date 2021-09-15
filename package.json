@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/falconsoft3d/knox-token-library-api#readme",
   "dependencies": {
-    "knox-token-library-js": "^1.0.22"
+    "knox-token-library-js": "^1.0.22",
+    "nodemon": "^2.0.12"
   }
 }
