@@ -12,3 +12,14 @@ nodemon src/index.js
 # Deploy 
 ```
 ```
+
+# EndPoint from http
+```
+http://localhost:3000/api/getsignedclientid/demo/your-demo-hash
+http://localhost:3000/api/getsignedclientid/demo/your-demo-hash
+```
+
+# EndPoint with curl
+```
+curl http://localhost:3000/api/getsignedclientid/demo/your-hash
+```
