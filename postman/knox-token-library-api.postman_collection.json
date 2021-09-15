@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "799df350-f6b6-4cb3-89a3-28a3db505ec0",
+		"name": "knox-token-library-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getsignedclientid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "signedaccesstoken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
