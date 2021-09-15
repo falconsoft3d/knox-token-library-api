@@ -11,7 +11,7 @@ npm run dev
 
 # Run 
 ```
-git clone git@github.com:falconsoft3d/knox-token-library-api.git
+git clone https://github.com/falconsoft3d/knox-token-library-api
 cd knox-token-library-api
 mv public.keys keys
 npm i
@@ -20,14 +20,16 @@ npm run start
 
 # Deploy with Docker
 ```
-sudo apt update
-sudo apt upgrade
+apt-get update && apt-get upgrade -y
+apt  install docker.io docker-compose -y
+
 sudo apt install curl
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo docker–compose --version
 
-git clone git@github.com:falconsoft3d/knox-token-library-api.git
+
+git clone https://github.com/falconsoft3d/knox-token-library-api
 cd knox-token-library-api
 mv public.keys keys
 docker-compose build
