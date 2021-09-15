@@ -20,8 +20,12 @@ npm run start
 
 # Deploy with Docker
 ```
+git clone git@github.com:falconsoft3d/knox-token-library-api.git
 $ docker-compose build
 $ docker-compose up
+```
+# Docker Commands
+```
 $ docker-compose stop
 ```
 
