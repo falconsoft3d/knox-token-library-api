@@ -33,7 +33,7 @@ git clone https://github.com/falconsoft3d/knox-token-library-api
 cd knox-token-library-api
 mv public.keys keys
 docker-compose build
-docker-compose up
+docker-compose up -d
 ```
 # Docker Commands
 ```
