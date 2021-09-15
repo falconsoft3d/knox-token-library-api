@@ -1,0 +1,23 @@
+{
+  "name": "knox-token-library-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falconsoft3d/knox-token-library-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falconsoft3d/knox-token-library-api/issues"
+  },
+  "homepage": "https://github.com/falconsoft3d/knox-token-library-api#readme",
+  "dependencies": {
+    "knox-token-library-js": "^1.0.22"
+  }
+}
