@@ -5,6 +5,7 @@ const URL_FILE = "keys/keys.json"
 var Constants = require('../keys/hash');
 
 // Step 5
+// http://localhost:3000/api/getsignedclientid/demo/your-demo-hash
 app.get('/api/getsignedclientid/:clientId/:codehash', (req, res)=>{
     if (req.params.codehash !== Constants.CODE_HASH) {
         res.status(400).json({
@@ -28,6 +29,7 @@ app.get('/api/getsignedclientid/:clientId/:codehash', (req, res)=>{
 });
 
 // Step 7
+// http://localhost:3000/api/signedaccesstoken/demo/your-demo-hash
 app.get('/api/signedaccesstoken/:apitoken/:codehash', (req, res)=>{
     if (req.params.codehash !== Constants.CODE_HASH) {
         res.status(400).json({
@@ -43,10 +45,17 @@ app.get('/api/signedaccesstoken/:apitoken/:codehash', (req, res)=>{
             });
         } catch (error) {
             es.status(400).json({
-                msg: 'error', error
+                msg: 'error', 
+                error
             })
     }
     }
+});
+
+app.get('*', (req, res)=>{
+    res.status(200).json({
+        msg: "This Route is not Valid"
+    });
 });
 
 app.listen(3000, ()=>{
