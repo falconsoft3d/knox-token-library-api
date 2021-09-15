@@ -10,7 +10,23 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/getsignedclientid/demokey/yourhash",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getsignedclientid",
+						"demokey",
+						"yourhash"
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +35,23 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/signedaccesstoken/demokey/yourhash",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signedaccesstoken",
+						"demokey",
+						"yourhash"
+					]
+				}
 			},
 			"response": []
 		}
