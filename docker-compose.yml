@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-      container_name : knoxtokenapi
+      container_name : knoxtoken
       restart: always
       build: .
       ports: 

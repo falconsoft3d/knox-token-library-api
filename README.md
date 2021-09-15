@@ -18,8 +18,11 @@ npm i
 npm run start
 ```
 
-# Deploy 
+# Deploy with Docker
 ```
+$ docker-compose build
+$ docker-compose up
+$ docker-compose stop
 ```
 
 # EndPoint from http
