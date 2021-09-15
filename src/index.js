@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
+const knoxTokenLibraryJs = require('knox-token-library-js');
 
-app.get('/api', (req, res)=>{
+app.get('/api/getsignedclientid', (req, res)=>{
     res.send('Hello World')
 });
 
