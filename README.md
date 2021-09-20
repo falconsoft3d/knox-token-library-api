@@ -54,5 +54,5 @@ curl http://localhost:3000/api/getsignedclientid/demo/your-hash
 
 # Upload Key
 ```
-rsync --info=progress2 key.json  root@127.127.127.127:~/knox-token-library-api/keys/key.json
+rsync key.json  root@127.127.127.127:~/knox-token-library-api/keys/key.json
 ```
