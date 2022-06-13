@@ -16,6 +16,6 @@ RUN npm install
 COPY . .
 
 # Configuramos el puerto
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["npm", "run", "start"]
