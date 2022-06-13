@@ -2,10 +2,10 @@ version: "3"
 
 services:
   web:
-      container_name : knoxtoken
+      container_name : knoxtoken_vnz
       restart: always
       build: .
       ports: 
-            - "3000:3000"
+            - "3001:3001"
       volumes:
             - .:/usr/src/app
