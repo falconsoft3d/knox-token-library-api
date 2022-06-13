@@ -5,7 +5,7 @@ const URL_FILE = "keys/keys.json"
 var Constants = require('../keys/hash');
 
 // Step 5
-// http://localhost:3000/api/getsignedclientid/demo/your-demo-hash
+// http://localhost:3001/api/getsignedclientid/demo/your-demo-hash
 app.get('/api/getsignedclientid/:clientId/:codehash', (req, res)=>{
     if (req.params.codehash !== Constants.CODE_HASH) {
         res.status(400).json({
@@ -29,7 +29,7 @@ app.get('/api/getsignedclientid/:clientId/:codehash', (req, res)=>{
 });
 
 // Step 7
-// http://localhost:3000/api/signedaccesstoken/demo/your-demo-hash
+// http://localhost:3001/api/signedaccesstoken/demo/your-demo-hash
 app.get('/api/signedaccesstoken/:apitoken/:codehash', (req, res)=>{
     if (req.params.codehash !== Constants.CODE_HASH) {
         res.status(400).json({
@@ -58,6 +58,6 @@ app.get('*', (req, res)=>{
     });
 });
 
-app.listen(3000, ()=>{
-    console.log('Server on port 3000')
+app.listen(3001, ()=>{
+    console.log('Server on port 3001')
 })
